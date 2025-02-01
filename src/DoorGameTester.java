@@ -2,11 +2,19 @@ import java.util.ArrayList;
 
 /**
  * The DoorGameTester class is used to run the door game and figure out the percentages associated with switching door
- * choice or keeping it the same.
+ * choice or keeping it the same. It also holds the answers to questions a and b from the textbook
  * @author Rachel Hussmann
  */
 public class DoorGameTester {
 
+    /* Question 2.20 a) There are three simple events associated with this problem. E1 = Contestant chooses a good door,
+    E2 = Contestant chooses bad door 1, E3 = Contestant chooses bad door 2 Each event has an equal probability of 1/3.
+    The probability that the contestant chooses the nice prize is 1/3 since there is only one event where that happens.
+    P(A) = P(E1) = 1/3
+    */
+
+    /* Question 2.20 b)
+    */
     public static void main(String[] args) {
 
         //Initializes the DoorGame tester object
