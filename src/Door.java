@@ -3,10 +3,6 @@ public class Door {
 
     private String behindDoor;
 
-    public Door(){
-        this.behindDoor = "G";
-    }
-
     public Door(String behindDoor){
         this.behindDoor = behindDoor;
     }
