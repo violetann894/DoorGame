@@ -9,7 +9,7 @@ public class Door {
 
     /**
      * Constructor for the Door class.
-     * @param behindDoor This constructor accepts a string variable that states what is behind the new door object
+     * @param behindDoor The String value of what is behind the door.
      */
     public Door(String behindDoor){
         this.behindDoor = behindDoor;
@@ -25,7 +25,7 @@ public class Door {
 
     /**
      * The setBehindDoor method accepts a new string that changes what is behind the door.
-     * @param behindDoor This method accepts a String with the new object behind the door.
+     * @param behindDoor The new String value of what is behind the door.
      */
     public void setBehindDoor(String behindDoor){
         this.behindDoor = behindDoor;
