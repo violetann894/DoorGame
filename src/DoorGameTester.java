@@ -28,17 +28,57 @@ public class DoorGameTester {
         v. The strategy that maximizes the contestant's probability of winning the good prize is by switching her
         choice to the other curtain/door.
     */
+
+    /*
+
+        Finding significant digits
+
+        Number of Trials: 10
+        Range of probabilities of stay wins: 10% - 50%
+        Range of probabilities of switch wins: 50% - 80%
+        Significant digit: Tens place
+        Number of significant digits: 1
+
+        Number of Trials: 100
+        Range of probabilities of stay wins: 28% - 34%
+        Range of probabilities of switch wins: 69% - 72%
+        Significant digit: Tens and ones place
+        Number of significant digits: 2
+
+        Number of Trials: 1000
+        Range of probabilities of stay wins: 31.20% - 34.60%
+        Range of probabilities of switch wins: 65.60% - 69.90%
+        Significant digit: Tens, ones and tenths place
+        Number of significant digits: 3
+
+        Number of Trials: 10000
+        Range of probabilities of stay wins: 32.55% - 34.14%
+        Range of probabilities of switch wins: 65.76% - 67.54%
+        Significant digit: Tens, ones, tenths and hundredths place
+        Number of significant digits: 4
+
+        Number of Trials: 100000
+        Range of probabilities of stay wins: 33.151% - 33.595%
+        Range of probabilities of switch wins: 66.411% - 66.984%
+        Significant digit: Tens, ones, tenths, hundredths and thousandths place
+        Number of significant digits: 5
+
+        Conclusion: As the trials increase, the accuracy of the probabilities and the number of significant digits
+        increase.
+
+        */
+
     public static void main(String[] args) {
 
         //Initializes the DoorGame tester object
         DoorGame tester = new DoorGame();
 
         //Initializes the results ArrayList to hold the calculated percentages of the trials
-        ArrayList<Double> results = tester.runGame(10000);
+        ArrayList<Double> results = tester.runGame(100000);
 
         //Print statements to print out the results of the trials
-        System.out.printf("Percentage of wins when choice was the same: %.2f \n", results.get(0)*100);
-        System.out.printf("Percentage of wins when choice switched: %.2f \n", results.get(1)*100);
+        System.out.printf("Percentage of wins when choice was the same: %.3f \n", results.get(0)*100);
+        System.out.printf("Percentage of wins when choice switched: %.3f \n", results.get(1)*100);
 
     }
 
